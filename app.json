@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "any-movie-mobile",
-    "slug": "any-movie-mobile",
+    "name": "swifty-companion",
+    "slug": "swifty-companion",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "any-movie",
+    "scheme": "swifty-companion",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

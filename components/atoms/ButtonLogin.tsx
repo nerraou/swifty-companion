@@ -1,7 +1,7 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { Text, TouchableOpacity } from "react-native";
-import CatIcon from "@/components/icons/CatIcon";
+import CatFaceIcon from "@/components/icons/CatFaceIcon";
 
 const ButtonLogin = () => {
   return (
@@ -15,7 +15,7 @@ const ButtonLogin = () => {
         className="p-4 w-72 h-14 border-dark-100 flex flex-row gap-6 items-center justify-center"
         activeOpacity={0.9}
       >
-        <CatIcon />
+        <CatFaceIcon />
         <Text className="font-podkova-semibold text-dark-100 text-xl text-center">
           Login
         </Text>

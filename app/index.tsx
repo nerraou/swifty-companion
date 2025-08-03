@@ -6,15 +6,27 @@ import CatIcon from "@/components/icons/CatIcon";
 import ProfileImageAndName from "@/components/Molecules/ProfileImageAndName";
 import ProfileCard from "@/components/Organisms/ProfileCard";
 import ProjectsCard from "@/components/Organisms/ProjectsCard";
+import ButtonSearch from "@/components/atoms/ButtonSearch";
+import InputSearch from "@/components/atoms/InputSearch";
+import { useState } from "react";
 
 function Index() {
   // return <ProfileImageAndName />;
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
-    <View className="flex-1 p-5 items-center gap-16 bg-dark-200 gap-6">
-      {/*<Icon42 />*/}
-      {/*<ButtonLogin />*/}
-      <ProfileCard />
-      <ProjectsCard />
+    <View className="flex-1 p-5 items-center justify-center bg-dark-200 gap-6">
+      <Icon42 />
+      {/*<InputSearch*/}
+      {/*  value={searchQuery}*/}
+      {/*  onChangeText={setSearchQuery}*/}
+      {/*  placeholder="Search items..." // optional*/}
+      {/*/>*/}
+
+      {/*<ButtonSearch />*/}
+      <ButtonLogin />
+      {/*<ProfileCard />*/}
+      {/*<ProjectsCard />*/}
     </View>
   );
 }

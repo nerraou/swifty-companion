@@ -16,7 +16,11 @@ const discovery = {
 const redirectUri = AuthSession.makeRedirectUri({
   native: "swiftycompanion://oauthredirect",
   path: "oauthredirect",
+  scheme: "swiftycompanion",
 });
+
+// const redirectUri =
+//   "https://auth.expo.io/@nerraou/swiftycompanion/oauthredirect";
 
 type TokenResponse = {
   access_token: string;

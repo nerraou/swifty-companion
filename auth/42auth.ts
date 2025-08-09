@@ -5,22 +5,18 @@ import { useState, useEffect } from "react";
 
 WebBrowser.maybeCompleteAuthSession();
 
-// 42 discovery document
 const discovery = {
   authorizationEndpoint: "https://api.intra.42.fr/oauth/authorize",
   tokenEndpoint: "https://api.intra.42.fr/oauth/token",
   revocationEndpoint: "https://api.intra.42.fr/oauth/token/revoke",
 };
 
-// Pick correct redirect for Expo Go vs standalone
 const redirectUri = AuthSession.makeRedirectUri({
   native: "swiftycompanion://oauthredirect",
   path: "oauthredirect",
   scheme: "swiftycompanion",
 });
 
-// const redirectUri =
-//   "https://auth.expo.io/@nerraou/swiftycompanion/oauthredirect";
 
 type TokenResponse = {
   access_token: string;
@@ -49,7 +45,7 @@ export function useAuth42() {
 
   const [token, setToken] = useState<TokenResponse | null>(null);
 
-  // ── Exchange the code for an access_token ──────────────────────
+
   useEffect(() => {
     (async () => {
       if (response?.type !== "success" || !request?.codeVerifier) return;

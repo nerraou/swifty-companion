@@ -11,7 +11,6 @@ import InputSearch from "@/components/atoms/InputSearch";
 import { useState } from "react";
 
 function Index() {
-  // return <ProfileImageAndName />;
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
